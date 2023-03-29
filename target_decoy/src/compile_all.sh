@@ -1,0 +1,12 @@
+javac target_decoy/DictionaryGenerator.java
+javac target_decoy/Counter.java
+javac target_decoy/Database.java
+javac target_decoy/DecoyGenerator.java
+javac target_decoy/RandomDecoy.java
+javac target_decoy/DeBruijnDecoy.java
+javac target_decoy/ReverseDecoy.java
+javac target_decoy/Peptide.java
+javac target_decoy/TrypsinPeptide.java
+javac target_decoy/PeptideGenerator.java
+javac target_decoy/TargetDecoy.java
+javac target_decoy/TargetDecoySim.java
