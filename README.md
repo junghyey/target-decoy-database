@@ -18,6 +18,25 @@ Working directory: target_decoy>src
 java target_decoy/TargetDecoySim
 ```
 
+## About Files
+1. Concatenated target decoy database</br>
+The concatenated database would look like:</br>
+>sp|ProteinID|something about target protein (target protein info)</br>
+target protein sequence</br>
+>XXX_sp|ProteinID|something about decoy protein (decoy protein info)</br>
+decoy protein sequence</br>
+
+2.Report files </br> 
+amino_acid_count files: total count of amino acid across all the proteins
+amino_acid_proportion files: an amino acid/ total amino acid count </br> 
+3. Peptide files </br>
+Cleavage based on "Trypsin" peptide </br> 
+decoy_peptide_length: lengths of the peptides created   length, count </br> 
+decoy_peptide_mass: mass of the peptides created        mass, count </br> 
+decoy_peptides: created peptides                        proteinID, [list of peptides]  </br> 
+
+
+
 ## References
 [1] Elias, J., Gygi, S. Target-decoy search strategy for increased confidence in 
 large-scale protein identifications by mass spectrometry.
