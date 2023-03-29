@@ -1,7 +1,7 @@
 # target-decoy-database
 
 ## Introduction
-target-decoy-database is a project for generating concatenated target decoy databse. This project is inspired by the research paper [1] "Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry". target-decoy-database contains java code & sample outputs for concatenated target-decoy database generation. It generates decoy data using three approaches: [1] random (completely), deBrujin[2], and [1] reverse. 
+target-decoy-database is a project for generating a concatenated target decoy database. This project is inspired by the research paper [1] "Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry". target-decoy-database contains java code & sample outputs for concatenated target-decoy database generation. It generates decoy data using three approaches: [1] random (completely), deBruijn[2], and [1] reverse. 
 
 ## Set up & Run
 1. (Skip if the directories already exist) Generate random_result, deBruijn_result, reverse_result directories (path: target-decoy-database>target_decoy) </br> Each directory should also contain subdirectories "target" and "decoy"
@@ -19,14 +19,15 @@ java target_decoy/TargetDecoySim
 ```
 
 ## About Files
-1. Concatenated target decoy database</br>
-The concatenated database would look like:</br>
->sp|ProteinID|something about target protein (target protein info)</br>
-target protein sequence</br>
->XXX_sp|ProteinID|something about decoy protein (decoy protein info)</br>
-decoy protein sequence</br>
 
-2.Report files </br> 
+1. Concatenated target decoy database </br>
+The concatenated database would look like: </br></br>
+\>sp|ProteinID|something about target protein (target protein info)</br>
+target protein sequence </br>
+\>XXX_sp|ProteinID|something about decoy protein (decoy protein info)</br>
+decoy protein sequence </br>
+
+2. Report files </br> 
 amino_acid_count files: total count of amino acid across all the proteins
 amino_acid_proportion files: an amino acid/ total amino acid count </br> 
 3. Peptide files </br>
