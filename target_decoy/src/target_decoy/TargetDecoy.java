@@ -56,8 +56,6 @@ public class TargetDecoy {
 		
 		//*******************************************Reports********************************************
 		/*Generate reports for target */
-		Database.writeDictionary("../random_result/target/target_sequence_r.txt",  targetSeqDict);
-		Database.writeDictionary("../random_result/target/target_info_r.txt",  targetInfoDict);
 		Database.writeCSV("../random_result/target/target_amino_acid_count_r.csv",  Counter.countAminoAcid(targetSeqDict));
 		Database.writeCSV("../random_result/target/target_amino_acid_proportion_r.csv",  Counter.getProportion(targetSeqDict, 6));
 		
