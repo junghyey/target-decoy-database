@@ -1,5 +1,5 @@
 ---
-title: "data_process_deBruijn"
+title: "data_process_reverse"
 author: "Hyeyun Jung"
 output: github_document
 ---
@@ -18,11 +18,11 @@ library(readr)
 
 ### Load Data Files
 ```{r}
-target  <- read_csv("deBruijn/target_deBruijn.csv", show_col_types = FALSE)
-decoy  <- read_csv("deBruijn/decoy_deBruijn.csv", show_col_types = FALSE)
-threhold_subset <- read_csv("deBruijn/threshold_all_d.csv", show_col_types = FALSE)
-threshold_target<- read_csv("deBruijn/threshold_target_d.csv", show_col_types = FALSE)
-threshold_decoy<- read_csv("deBruijn/threshold_decoy_d.csv", show_col_types = FALSE)
+target  <- read_csv("reverse/target_rev.csv", show_col_types = FALSE)
+decoy  <- read_csv("reverse/decoy_rev.csv", show_col_types = FALSE)
+threhold_subset <- read_csv("reverse/threshold_all_r.csv", show_col_types = FALSE)
+threshold_target<- read_csv("reverse/threshold_target_r.csv", show_col_types = FALSE)
+threshold_decoy<- read_csv("reverse/threshold_decoy_r.csv", show_col_types = FALSE)
 ```
 
 

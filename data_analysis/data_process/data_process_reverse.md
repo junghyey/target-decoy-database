@@ -1,4 +1,4 @@
-data_process_deBruijn
+data_process_reverse
 ================
 Hyeyun Jung
 
@@ -16,35 +16,35 @@ library(readr)
 ### Load Data Files
 
 ``` r
-target  <- read_csv("deBruijn/target_deBruijn.csv", show_col_types = FALSE)
+target  <- read_csv("reverse/target_rev.csv", show_col_types = FALSE)
 ```
 
     ## New names:
     ## * `` -> ...1
 
 ``` r
-decoy  <- read_csv("deBruijn/decoy_deBruijn.csv", show_col_types = FALSE)
+decoy  <- read_csv("reverse/decoy_rev.csv", show_col_types = FALSE)
 ```
 
     ## New names:
     ## * `` -> ...1
 
 ``` r
-threhold_subset <- read_csv("deBruijn/threshold_all_d.csv", show_col_types = FALSE)
+threhold_subset <- read_csv("reverse/threshold_all_r.csv", show_col_types = FALSE)
 ```
 
     ## New names:
     ## * `` -> ...1
 
 ``` r
-threshold_target<- read_csv("deBruijn/threshold_target_d.csv", show_col_types = FALSE)
+threshold_target<- read_csv("reverse/threshold_target_r.csv", show_col_types = FALSE)
 ```
 
     ## New names:
     ## * `` -> ...1
 
 ``` r
-threshold_decoy<- read_csv("deBruijn/threshold_decoy_d.csv", show_col_types = FALSE)
+threshold_decoy<- read_csv("reverse/threshold_decoy_r.csv", show_col_types = FALSE)
 ```
 
     ## New names:
@@ -63,7 +63,7 @@ show(target_plt)
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](data_process_deBruijn_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](data_process_reverse_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 ``` r
 decoy_plt <- ggplot(decoy, aes(xcorr)) +
@@ -74,7 +74,7 @@ show(decoy_plt)
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](data_process_deBruijn_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](data_process_reverse_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ### Draw Combined Plots (Target + Decoy + Threshold)
 
@@ -99,7 +99,7 @@ show(freq_plt)
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](data_process_deBruijn_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](data_process_reverse_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ``` r
 density_plt <- ggplot(df) +
@@ -117,7 +117,7 @@ density_plt <- ggplot(df) +
 show(density_plt)
 ```
 
-![](data_process_deBruijn_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](data_process_reverse_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 ### Draw Plots Beyond Threshold
 
@@ -138,4 +138,4 @@ show(thres_freq_plt)
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](data_process_deBruijn_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](data_process_reverse_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
