@@ -40,7 +40,7 @@ decoy_peptides: created peptides                        proteinID, [list of pept
 ## Part2: Comet Data Analysis
 
 ### Comet Sample Result
-1. Run comet </br>
+1. Run [comet](https://uwpr.github.io/Comet/) </br>
 DataBase: concat_target_decoy_reverse.fasta</br>
 DataBase: concat_target_decoy_deBruijn.fasta</br>
 ProteinFile: 	f.MSV000079841/ccms_peak/PEAK/b1906_293T_proteinID_01A_QE3_122212.mzXML from [here](https://massive.ucsd.edu/ProteoSAFe/dataset_files.jsp?task=9101dafdf9d8484e86fac78cf7024b9f#%7B%22table_sort_history%22%3A%22main.collection_asc%22%2C%22main.collection_input%22%3A%22ccms_peak%7C%7CEXACT%22%7D)</br>
@@ -58,4 +58,6 @@ Nat Methods 4, 207–214 (2007). https://doi.org/10.1038/nmeth1019
 [2] J. Proteome Res. 2020, 19, 3, 1029–1036
 Publication Date:February 3, 2020
 https://doi.org/10.1021/acs.jproteome.9b00555
+
+[3] https://uwpr.github.io/Comet/
 
