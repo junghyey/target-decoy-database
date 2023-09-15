@@ -1,8 +1,8 @@
 # target-decoy-database
+## Introduction
+target-decoy-database is a project for generating a concatenated target decoy database. This project is inspired by the research paper [1] "Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry". target-decoy-database contains java code & sample outputs for concatenated target-decoy database generation. There are two parts in this project. The part 1 includes generattion of decoy data using three approaches: [1] random (completely), deBruijn[2], and [1] reverse. The part 2 includes data analysis (comet (tandem mass spectrometry (MS/MS) sequence database search tool), python, r).
 
-## Part1: Target Decoy Database Creation
-### Introduction
-target-decoy-database is a project for generating a concatenated target decoy database. This project is inspired by the research paper [1] "Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry". target-decoy-database contains java code & sample outputs for concatenated target-decoy database generation. It generates decoy data using three approaches: [1] random (completely), deBruijn[2], and [1] reverse. 
+## Part 1: Target Decoy Database Creation 
 
 ### Set up & Run
 1. (Skip if the directories already exist) Generate random_result, deBruijn_result, reverse_result directories (path: target-decoy-database>target_decoy) </br> Each directory should also contain subdirectories "target" and "decoy"
@@ -37,7 +37,7 @@ decoy_peptide_length: lengths of the peptides created   length, count </br>
 decoy_peptide_mass: mass of the peptides created        mass, count </br> 
 decoy_peptides: created peptides                        proteinID, [list of peptides]  </br> 
 
-## Part2: Comet Data Analysis
+## Part 2: Comet Data Analysis
 
 ### Comet Sample Result
 1. Run [comet](https://uwpr.github.io/Comet/) </br>
