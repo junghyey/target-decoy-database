@@ -43,7 +43,7 @@ decoy_peptides: created peptides                        proteinID, [list of pept
 1. Ran comet with:
 DataBase: concat_target_decoy_reverse.fasta
 DataBase: concat_target_decoy_deBruijn.fasta
-ProteinFile: 	f.MSV000079841/ccms_peak/PEAK/b1906_293T_proteinID_01A_QE3_122212.mzXML from [https://massive.ucsd.edu/ProteoSAFe/dataset_files.jsp?task=9101dafdf9d8484e86fac78cf7024b9f#%7B%22table_sort_history%22%3A%22main.collection_asc%22%2C%22main.collection_input%22%3A%22ccms_peak%7C%7CEXACT%22%7D][https://massive.ucsd.edu/ProteoSAFe/dataset_files.jsp?] 
+ProteinFile: 	f.MSV000079841/ccms_peak/PEAK/b1906_293T_proteinID_01A_QE3_122212.mzXML from [here] (https://massive.ucsd.edu/ProteoSAFe/dataset_files.jsp?task=9101dafdf9d8484e86fac78cf7024b9f#%7B%22table_sort_history%22%3A%22main.collection_asc%22%2C%22main.collection_input%22%3A%22ccms_peak%7C%7CEXACT%22%7D)
 
 from sample_results. These results are saved in data_analysis/comet_sample_result
 3. 
